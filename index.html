@@ -35,7 +35,7 @@
                 background-color: rgb(229, 39, 10);
                 font-style: italic;
                 font-weight: bold;
-                boxShadow: 3px 5px 2px #b99f6c;
+                box-shadow: 3px 5px 2px #b99f6c;
             }
 
             div{
@@ -78,9 +78,9 @@
 
         <div>
             <p id="score">SCORE: 0</p>
-            <p id="timer">TIME LEFT: 20</p>
+            <p id="timer">TIME LEFT: 12</p>
             <div id="vert">
-                <h1 id="rules">FIND 20 PINK CIRCLES IN 20 SEC!</h1>
+                <h1 id="rules">FIND 20 PINK CIRCLES IN 12 SEC!</h1>
                 <button id="start" onclick="myStart()">PLAY</button>
             </div>
         </div>
@@ -149,7 +149,7 @@
             }
             makeCounter();
 
-            var timeleft = 19;
+            var timeleft = 11;
             var downloadTimer = setInterval(function(){
                 if(timeleft <= 0){
                     clearInterval(downloadTimer);
